@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from '@apollo/client';
 import './App.css';
+import AppBar from '@material-ui/core/AppBar';
+import Typography from '@material-ui/core/Typography';
+import Chores from './components/Chores';
+import CreateChore from './components/CreateChore';
+
+const client = new ApolloClient({
+  uri: '/' 
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+      <AppBar position="static">
+        <Typography variant="h6">
+          Chores
+        </Typography>
+      </AppBar>
+      <br></br>
+      <Chores />
+      <CreateChore />
+    </ApolloProvider>
   );
 }
 
