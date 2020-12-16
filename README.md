@@ -1,5 +1,5 @@
-# Chores:
-A Basic Chores Application (in Progress)
+# Chores (in Progress):
+A basic chores application 
 
 ## Purpose:
 Help commit myself to daily chores while learning React and GraphQL in the process!
