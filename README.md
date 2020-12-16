@@ -1,6 +1,6 @@
 A Basic Chores Application (in Progress)
 
-### Update Modal Coming Soon!
+#### Update Modal Coming Soon!
 
 ## Purpose
 Help commit myself to daily chores while learning React and GraphQL in the process!
