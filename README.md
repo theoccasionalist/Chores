@@ -6,7 +6,7 @@ Help commit myself to daily chores while learning React and GraphQL in the proce
 
 ## Coming Soon:
 <ul>
-  <li>Update Modal!</li>
+  <li>Restyling!</li>
  </ul>
 
 ## It Works So Far!
