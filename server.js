@@ -74,7 +74,7 @@ const updateChore = (arg) => {
     return Chore.findByIdAndUpdate({_id: arg._id}, {
         $set: {
             name: arg.input.name,
-            desription: arg.input.desription,
+            description: arg.input.description,
             completed: arg.input.completed,
             dueDate: arg.input.dueDate
         }   

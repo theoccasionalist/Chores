@@ -4,7 +4,7 @@ import './App.css';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 import Chores from './components/Chores';
-import CreateChore from './components/CreateChore';
+import ChoreInput from './components/ChoreInput';
 
 const client = new ApolloClient({
   uri: '/' 
@@ -18,9 +18,8 @@ function App() {
           Chores
         </Typography>
       </AppBar>
-      <br></br>
       <Chores />
-      <CreateChore />
+      <ChoreInput />
     </ApolloProvider>
   );
 }

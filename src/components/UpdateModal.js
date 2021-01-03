@@ -1,19 +1,17 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
-import { gql, useMutation } from '@apollo/client';
-import CreateChore from './CreateChore';
-//COMING SOON: AN UPDATE MODAL!!!
-const UPDATE_CHORE = gql`
-    mutation MarkChoreComplete($id: String!, $input: ChoreInput!) {
-        updateChore(_id: $id, input: $input) {_id}
-    }
-`
+import ChoreInput from './ChoreInput';
 
-function UpdateChoreModal(props) {
-    const body = (
-        <CreateChore chore={props} />
-      );
+function UpdateModal(props) {
+    return <Modal
+      open={props.openModal}
+      aria-labelledby="simple-modal-title"
+      aria-describedby="simple-modal-description"
+      disableBackdropClick>
+      <div>
+          <ChoreInput handleModalClose={props.handleModalClose} {...props} />    
+      </div>
+    </Modal>
 }
 
-export default UpdateChoreModal;
+export default UpdateModal;

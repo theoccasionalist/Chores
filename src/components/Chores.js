@@ -1,20 +1,8 @@
 import React from 'react';
-import { Query } from 'react-apollo';
-import { gql, useQuery } from '@apollo/client';
 import Chore from './Chore'
 import Divider from '@material-ui/core/Divider';
-
-const GET_ALL_CHORES = gql`
-    query {
-        getAllChores(sortBy: { field: "dueDate", order: ASC }) {
-            _id
-            name
-            description
-            completed
-            dueDate
-        }
-    } 
-`;
+import { useQuery } from '@apollo/client';
+import { GET_ALL_CHORES} from './../queries'
 
 function Chores() {
     const {loading, error, data} = useQuery(GET_ALL_CHORES);
