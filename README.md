@@ -9,8 +9,7 @@ Help commit myself to daily chores while learning React and GraphQL in the proce
   <li>Restyling!</li>
  </ul>
 
-## It Works So Far!
-### Create Chore and Chore List
+## Create Chore and Chore List
 ![image](https://user-images.githubusercontent.com/28411165/102290201-834ebe80-3f0e-11eb-840f-f4fae1b9f5a5.png)
-### Update Modal 
+## Update Modal 
 ![image](https://user-images.githubusercontent.com/28411165/103491322-e2f30800-4df0-11eb-92ce-b801fa1c9899.png)
