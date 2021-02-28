@@ -6,6 +6,7 @@ Help commit myself to daily chores while learning React and GraphQL in the proce
 
 ## Coming Soon:
 <ul>
+  <>Refactoring to Distinguish Functional Components from Classes</>
   <li>Restyling!</li>
  </ul>
 
